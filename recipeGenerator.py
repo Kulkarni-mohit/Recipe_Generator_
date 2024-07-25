@@ -6,8 +6,8 @@ from dotenv import load_dotenv, find_dotenv
 from pathlib import Path
 
 
-load_dotenv(Path(r"recgen\.env"))
-palm.configure(api_key=os.getenv("Key"))
+# load_dotenv(Path(r"recgen\.env"))
+palm.configure(api_key=os.getenv("KEY"))
 
 def generate_recipe_suggestion(vegetables, cuisine, message, flag=0):
   """Generates a recipe suggestion based on the given vegetables and cuisine.
