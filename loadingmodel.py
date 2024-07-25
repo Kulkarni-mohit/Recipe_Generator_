@@ -12,7 +12,7 @@ def recognize(path):
 
     # Load the model.
     model = tf.keras.models.load_model('resnet50.h5')
-    l = os.listdir(r"Vegetable Images\test")
+    l = os.listdir(r"Dataset\test")
 
     # Preprocess the image.
     image = tf.keras.preprocessing.image.load_img(path, target_size=(224, 224))
